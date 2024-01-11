@@ -68,13 +68,16 @@ main {
   padding: 26px 32px 33px;
 }
 
-.intensiv h3 {
+.intensiv button {
+  background-color: transparent;
+  border: none;
+  outline: none;
   color: #7078c9;
   font-size: 18px;
   font-weight: 400;
 }
 
-.intensiv h3:hover {
+.intensiv button:hover {
   cursor: pointer;
   color: #fff;
 }
@@ -90,7 +93,8 @@ main {
   background-color: #33397a;
 }
 
-.card h2 {
+.card h2,
+.card h2 span {
   color: #fff;
   font-size: 56px;
   font-weight: 300;
@@ -227,7 +231,8 @@ main {
     justify-content: space-between;
   }
 
-  .card-info h2 {
+  .card-info h2,
+  .card-info h2 span {
     font-size: 32px;
   }
 }
