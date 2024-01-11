@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: #0e1323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-rows: repeat(2, 255px);
+  gap: 30px;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #1c204b;
+  display: flex;
+  flex-direction: column;
+}
+
+.jeremy {
+  grid-row: 1/3;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  padding: 37px 32px 80px;
+  background-color: #5747ea;
+  border-radius: 15px;
+}
+
+.inner img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 3px #fff solid;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 40px;
+}
+
+.inner span {
+  color: #bbc0ff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.inner h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.intensiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21px;
+  padding: 26px 32px 33px;
+}
+
+.intensiv h3 {
+  color: #7078c9;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.intensiv h3:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.card {
+  height: 80%;
+  padding: 29px 30px 32px;
+  background-color: #1c204b;
+  border-radius: 15px;
+}
+
+.card:hover {
+  background-color: #33397a;
+}
+
+.card h2 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.card span {
+  color: #bbc0ff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.header h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header img:hover {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(99%) saturate(6%)
+    hue-rotate(124deg) brightness(101%) contrast(100%);
+  cursor: pointer;
+}
+
+.work {
+  background-color: #ff8b64;
+  flex-direction: column-reverse;
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.play {
+  background-color: #55c2e6;
+  flex-direction: column-reverse;
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.study {
+  background-color: #ff5e7d;
+  flex-direction: column-reverse;
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.Exercise {
+  background-color: #4bcf82;
+  flex-direction: column-reverse;
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px right 20px;
+}
+
+.Social {
+  background-color: #7335d2;
+  flex-direction: column-reverse;
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.Self-Care {
+  background-color: #f1c75b;
+  flex-direction: column-reverse;
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1120px) {
+  body {
+    padding-top: 81px;
+  }
+  main {
+    grid-template-columns: minmax(200px, 600px);
+    grid-template-rows: 160px;
+    gap: 24px;
+    margin-inline: 15px;
+  }
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 35px 32px 34px;
+  }
+
+  .inner img {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+  }
+
+  .jeremy {
+    height: 203px;
+  }
+
+  .jeremy-info h2 {
+    font-size: 24px;
+  }
+  .intensiv {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+  }
+  .header {
+    margin-bottom: 7px;
+  }
+  .card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-info h2 {
+    font-size: 32px;
+  }
+}
